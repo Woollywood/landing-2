@@ -1,0 +1,85 @@
+//Заголовки, общие БЭМ блоки и т.д.
+
+.button-trial {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	padding: rem(12) rem(16);
+	border: rem(1) solid rgba(237, 255, 129, 0.4);
+	background: rgba(255, 255, 255, 0.1);
+	border-radius: rem(116);
+	color: #fff;
+	font-size: rem(16);
+
+	transition: all 0.3s ease;
+	@media (any-hover: hover) {
+		&:hover {
+			color: #d6ff7e;
+		}
+	}
+}
+
+.button-main {
+	background: linear-gradient(328.68deg, #98aa28 13.03%, #d6ff7e 120.61%);
+	box-shadow: 0px 34px 50px rgba(7, 63, 67, 0.07);
+	border-radius: rem(192);
+
+	padding: rem(16);
+	min-height: rem(78);
+	min-width: rem(243);
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	font-weight: 600;
+	font-size: rem(20);
+	line-height: math.div(24, 20);
+	color: #fff;
+	text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+
+	transition: all 0.3s ease;
+	@media (any-hover: hover) {
+		&:hover {
+			box-shadow: 0px 34px 50px rgba(7, 63, 67, 0.45);
+			color: #253d32;
+		}
+	}
+}
+
+.button-link {
+	color: #a3b938;
+	font-weight: 500;
+	font-size: rem(24);
+	line-height: math.div(28, 24);
+
+	span {
+		text-decoration: underline;
+	}
+
+	display: flex;
+	justify-content: flex-end;
+	gap: rem(16);
+	flex-direction: row-reverse;
+	align-items: center;
+
+	&::before {
+		transition: all 0.3s ease;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			&::before {
+				transform: translateX(125%);
+			}
+		}
+	}
+}
+
+.title-font {
+	color: #253d32;
+	font-weight: 700;
+	font-size: rem(42);
+	line-height: math.div(65, 42);
+}

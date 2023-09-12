@@ -1,11 +1,10 @@
 {
-	"name": "fls-start",
-	"version": "3.0.0",
-	"description": "Start template with Gulp and Webpack",
-	"author": "FLS",
+	"name": "landing-2",
+	"version": "1.0.0",
 	"private": true,
 	"license": "",
 	"type": "module",
+	"homepage": "https://Woollywood.github.io/landing-2",
 	"scripts": {
 		"start": "npm i --legacy-peer-deps",
 		"dev": "gulp && webpack serve --progress -c config/webpack.dev.js",
@@ -25,6 +24,7 @@
 		"css-loader": "latest",
 		"del": "latest",
 		"file-include-webpack-plugin-replace": "latest",
+		"gh-pages": "^6.0.0",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
